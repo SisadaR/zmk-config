@@ -123,7 +123,7 @@
             bindings = <
  &kp DELETE  &kp INSERT  &kp HOME   &kp PAGE_DOWN   &kp PAGE_UP &kp END             &kp HOME   &kp PAGE_DOWN   &kp PAGE_UP          &kp END  &kp INSERT  &kp DELETE
  &trans  &trans   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW      &trans      &trans
- &trans  &trans  &trans  &trans  &trans  &kp DEL                                     &kb BACKSPACE           &trans        &trans           &trans      &trans      &trans
+ &trans  &trans  &trans  &trans  &trans  &kp DEL                                    &kp BACKSPACE           &trans        &trans           &trans      &trans      &trans
                          &trans  &trans  &trans                                     &trans          &trans        &trans
             >;
         };
