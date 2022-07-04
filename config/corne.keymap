@@ -85,19 +85,19 @@
 
         base {
             bindings = <
-   &mt LCTRL ESC    &kp Q       &kp W       &kp E         &kp R         &kp T            &kp Y         &kp U        &kp I       &kp O       &kp P       &kp BACKSPACE
-   &lt 3 TAB        &hm LCTRL A &hm LALT S  &hm LGUI D   &hm LSHIFT F  &lt 3 G           &kp H         &hm RSHIFT J &hm RGUI K  &hm RALT L  &hm RCTRL SEMICOLON       &kp APOS
-   &kp LSHIFT       &kp Z       &kp X       &kp C         &kp V         &kp B            &kp N         &kp M        &kp COMMA   &kp DOT     &kp FSLH   &kp LEFT_ALT
+   &mt LCTRL ESC    &kp Q       &kp W       &kp E         &kp R         &kp T            &kp Y         &kp U        &kp I       &kp O       &kp P                   &kp BACKSPACE
+   &lt 3 TAB        &hm LCTRL A &hm LALT S  &hm LGUI D   &hm LSHIFT F  &lt 3 G           &kp H         &hm RSHIFT J &hm RGUI K  &hm RALT L  &hm RCTRL SEMICOLON     &lt 5 APOS
+   &kp LSHIFT       &kp Z       &kp X       &kp C         &kp V         &kp B            &kp N         &kp M        &kp COMMA   &kp DOT     &kp FSLH                &kp LEFT_ALT
                                             &kp LGUI      &mo 1         &lt 4 SPACE      &lt 4 RET     &mo 2        &kp RALT
             >;
         };
 
         raise {
             bindings = <
- &kp GRAVE         &kp N1  &kp N2        &kp N3          &kp N4          &kp N5          &kp N6             &kp N7     &kp N8            &kp N9             &kp N0     &kp DELETE
-    &trans       &kp LBKT  &trans      &kp PLUS    &kp KP_MINUS        &kp LPAR          &kp RPAR           &kp MINUS  &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
-    &trans  &kp LESS_THAN  &trans  &kp KP_EQUAL  &kp UNDERSCORE  &kp LEFT_BRACE          &kp RIGHT_BRACE    &trans     &trans            &trans   &kp GREATER_THAN         &trans
-                                         &trans          &trans          &trans          &kp RG(SPACE)      &kp RG(SPACE)     &trans
+ &kp GRAVE         &kp N1  &kp N2        &kp N3          &kp N4          &kp N5          &kp N6             &kp N7          &kp N8     &kp N9             &kp N0     &kp DELETE
+    &trans       &kp LBKT  &trans      &kp PLUS    &kp KP_MINUS        &kp LPAR          &kp RPAR           &kp MINUS       &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
+    &trans  &kp LESS_THAN  &trans  &kp KP_EQUAL  &kp UNDERSCORE  &kp LEFT_BRACE          &kp RIGHT_BRACE    &trans          &trans     &trans   &kp GREATER_THAN         &trans
+                                         &trans          &trans          &trans          &kp RG(SPACE)      &kp RG(SPACE)   &trans
             >;
         };
 
@@ -106,7 +106,7 @@
     &kp TILDE   &kp EXCL    &kp AT      &kp HASH    &kp DLLR        &kp PRCNT           &kp CARET   &kp AMPS    &kp KP_MULTIPLY &kp LPAR  &kp RPAR  &kp DEL
     &trans      &trans      &trans      &kp F1      &kp F2          &kp F3              &kp F4      &kp F5      &kp F6          &trans    &trans    &kp PIPE
     &trans      &trans      &trans      &kp F7      &kp F8          &kp F9              &kp F10     &kp F11     &kp F12         &trans    &trans    &trans
-                                        &trans      &kp LG(SPACE)   &kp LG(SPACE)              &trans      &trans      &trans
+                                        &trans      &kp LG(SPACE)   &kp LG(SPACE)       &trans      &trans      &trans
             >;
         };
 
@@ -125,6 +125,15 @@
  &trans  &trans   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW      &trans      &trans
  &trans  &trans  &trans  &trans  &trans  &kp DEL                                    &kp BACKSPACE   &trans        &trans           &trans      &trans      &trans
                          &trans  &trans  &trans                                     &trans          &trans        &trans
+            >;
+        };
+        
+        number {
+            bindings = <
+     &trans        &trans        &trans        &trans        &trans     &trans         &kp KP_PLUS         &kp N7   &kp N8  &kp N9  &trans  &trans
+     &trans        &trans        &trans        &trans        &trans     &trans         &kp KP_MINUS        &kp N4   &kp N5  &kp N6  &trans  &trans
+     &trans        &trans        &trans        &trans        &trans     &trans         &kp KP_MULTIPLY     &kp N1   &kp N2  &kp N3  &trans  &trans
+                                               &trans        &trans     &kp EQUAL      &kp KP_SLASH        &kp K0  &kp KP_DOT
             >;
         };
     };
