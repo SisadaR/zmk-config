@@ -59,7 +59,7 @@
    &mt LCTRL ESC    &kp Q       &kp W       &kp E         &kp R         &kp T            &kp Y         &kp U        &kp I       &kp O       &kp P                   &kp BACKSPACE
    &lt 3 TAB        &mh LCTRL A &mh LALT S  &mh LGUI D    &mh LSHIFT F  &lt 3 G          &kp H         &mh RSHIFT J &mh RGUI K  &mh RALT L  &mh RCTRL SEMICOLON     &lt 5 APOS
    &kp LSHIFT       &kp Z       &kp X       &kp C         &kp V         &kp B            &kp N         &kp M        &kp COMMA   &kp DOT     &kp FSLH                &kp LALT
-                                            &kp LGUI      &mo 1         &lt 4 SPACE      &lt 4 RET     &mo 2        &tog 6
+                                            &mo 7         &mo 1         &lt 4 SPACE      &lt 4 RET     &mo 2        &tog 6
             >;
         };
 
@@ -110,11 +110,20 @@
         
         FixedDirection {
             bindings = <
- &kp DELETE &kp INSERT        &kp HOME              &kp PAGE_DOWN        &kp PAGE_UP            &kp END                 &kp HOME        &kp PAGE_DOWN           &kp PAGE_UP         &kp END                 &kp INSERT          &kp DELETE
- &trans     &mh LCTRL LSHIFT  &mh LATL LEFT_ARROW   &mh LGUI DOWN_ARROW  &mh LSHIFT UP_ARROW    &kp RIGHT_ARROW         &kp LEFT_ARROW  &mh RSHIFT DOWN_ARROW   &mh RGUI UP_ARROW   &mh RATL RIGHT_ARROW    &mh RCTRL RSHIFT    &trans
- &trans     &trans            &trans                &trans               &trans                 &kp DEL                 &kp BACKSPACE   &trans                  &trans              &trans                  &trans              &trans
-                                                    &trans               &trans                 &kp SPACE               &kp ENTER       &trans                  &trans
-            >;
+ &trans     &trans      &trans          &trans          &trans          &trans              &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP     &kp END         &kp INSERT  &kp DELETE
+ &trans     &kp LCTRL   &kp LATL        &kp LGUI        &kp LSHIFT      &kp RIGHT_ARROW     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &kp RSHIFT  &trans
+ &trans     &trans      &trans          &trans          &trans          &kp DEL             &kp BACKSPACE   &trans          &trans          &trans          &trans      &trans
+                                        &trans          &trans          &kp SPACE           &kp ENTER       &trans          &trans
+                                        >;
+        };
+        
+        StickyKey {
+            bindings = <
+ &trans     &trans      &trans          &trans          &trans          &trans              &trans          &trans          &trans          &trans          &trans &kp DELETE
+ &trans     &sk LCTRL   &sk LATL        &sk LGUI        &sk LSHIFT      &sk RIGHT_ARROW     &trans          &trans          &trans          &trans          &trans  &trans
+ &trans     &trans      &trans          &trans          &trans          &trans              &trans          &trans          &trans          &trans          &trans      &trans
+                                        &trans          &trans          &trans              &trans          &trans          &trans
+                                        >;
         };
     };
 };
