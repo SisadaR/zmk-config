@@ -18,38 +18,9 @@
         compatible = "zmk,combos";
 
         tab {
-            bindings = <&trans>;
-            key-positions = <2 3>;
-        };
-
-        ctrl {
-            bindings = <&kp LCTRL>;
-            key-positions = <26 27>;
-        };
-
-        cmd {
-            bindings = <&kp LCMD>;
-            key-positions = <37 38>;
-        };
-
-        alt {
-            bindings = <&kp LEFT_ALT>;
-            key-positions = <39 40>;
-        };
-
-        shift {
-            bindings = <&kp LSHIFT>;
-            key-positions = <8 9>;
-        };
-
-        caps_word {
-            bindings = <&caps_word>;
-            key-positions = <17 18>;
-        };
-
-        delete {
-            bindings = <&kp DEL>;
-            key-positions = <32 33>;
+            timeout-ms = <100>;
+            bindings = <&kp TAB>;
+            key-positions = <1 2>;
         };
     };
 
@@ -88,7 +59,7 @@
    &mt LCTRL ESC    &kp Q       &kp W       &kp E         &kp R         &kp T            &kp Y         &kp U        &kp I       &kp O       &kp P                   &kp BACKSPACE
    &lt 3 TAB        &mh LCTRL A &mh LALT S  &mh LGUI D    &mh LSHIFT F  &lt 3 G          &kp H         &mh RSHIFT J &mh RGUI K  &mh RALT L  &mh RCTRL SEMICOLON     &lt 5 APOS
    &kp LSHIFT       &kp Z       &kp X       &kp C         &kp V         &kp B            &kp N         &kp M        &kp COMMA   &kp DOT     &kp FSLH                &kp LALT
-                                            &kp LGUI      &mo 1         &lt 4 SPACE      &lt 4 RET     &mo 2        &kp RCTRL
+                                            &kp LGUI      &mo 1         &lt 4 SPACE      &lt 4 RET     &mo 2        &tog 6
             >;
         };
 
@@ -122,9 +93,9 @@
         Direction {
             bindings = <
  &kp DELETE &kp INSERT  &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP     &kp END             &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP     &kp END         &kp INSERT  &kp DELETE
- &trans     &trans      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW &trans      &trans
+ &trans     &kp LSHIFT  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &kp RSHIFT  &trans
  &trans     &trans      &trans          &trans          &trans          &kp DEL             &kp BACKSPACE   &trans          &trans          &trans          &trans      &trans
-                                        &trans          &trans          &trans              &trans          &trans          &trans
+                                        &trans          &trans          &kp SPACE           &kp ENTER       &trans          &trans
             >;
         };
         
@@ -134,6 +105,15 @@
      &trans        &trans        &trans        &trans        &trans     &trans         &kp KP_MINUS        &kp N4   &kp N5  &kp N6  &trans  &trans
      &trans        &trans        &trans        &trans        &trans     &trans         &kp KP_MULTIPLY     &kp N1   &kp N2  &kp N3  &trans  &trans
                                                &trans        &trans     &kp EQUAL      &kp KP_SLASH        &kp N0   &kp KP_DOT
+            >;
+        };
+        
+        FixedDirection {
+            bindings = <
+ &kp DELETE &kp INSERT        &kp HOME              &kp PAGE_DOWN        &kp PAGE_UP            &kp END                 &kp HOME        &kp PAGE_DOWN           &kp PAGE_UP         &kp END                 &kp INSERT          &kp DELETE
+ &trans     &mh LCTRL LSHIFT  &mh LATL LEFT_ARROW   &mh LGUI DOWN_ARROW  &mh LSHIFT UP_ARROW    &kp RIGHT_ARROW         &kp LEFT_ARROW  &mh RSHIFT DOWN_ARROW   &mh RGUI UP_ARROW   &mh RATL RIGHT_ARROW    &mh RCTRL RSHIFT    &trans
+ &trans     &trans            &trans                &trans               &trans                 &kp DEL                 &kp BACKSPACE   &trans                  &trans              &trans                  &trans              &trans
+                                                    &trans               &trans                 &kp SPACE               &kp ENTER       &trans                  &trans
             >;
         };
     };
