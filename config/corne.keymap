@@ -111,7 +111,7 @@
         FixedDirection {
             bindings = <
  &trans     &trans      &trans          &trans          &trans          &trans              &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP     &kp END         &kp INSERT  &kp DELETE
- &trans     &kp LCTRL   &kp LATL        &kp LGUI        &kp LSHIFT      &kp RIGHT_ARROW     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &kp RSHIFT  &trans
+ &trans     &kp LCTRL   &kp LALT        &kp LGUI        &kp LSHIFT      &trans              &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &kp RSHIFT  &trans
  &trans     &trans      &trans          &trans          &trans          &kp DEL             &kp BACKSPACE   &trans          &trans          &trans          &trans      &trans
                                         &trans          &trans          &kp SPACE           &kp ENTER       &trans          &trans
                                         >;
