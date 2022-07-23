@@ -120,7 +120,7 @@
         StickyKey {
             bindings = <
  &trans     &trans      &trans          &trans          &trans          &trans              &trans          &trans          &trans          &trans          &trans &kp DELETE
- &trans     &sk LCTRL   &sk LATL        &sk LGUI        &sk LSHIFT      &sk RIGHT_ARROW     &trans          &trans          &trans          &trans          &trans  &trans
+ &trans     &sk LCTRL   &sk LALT        &sk LGUI        &sk LSHIFT      &sk RIGHT_ARROW     &trans          &trans          &trans          &trans          &trans  &trans
  &trans     &trans      &trans          &trans          &trans          &trans              &trans          &trans          &trans          &trans          &trans      &trans
                                         &trans          &trans          &trans              &trans          &trans          &trans
                                         >;
